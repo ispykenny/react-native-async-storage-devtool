@@ -1,6 +1,6 @@
 {
   "name": "react-native-async-storage-devtool",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A devtool for React Native AsyncStorage",
   "author": "Kenny Krosky",
   "license": "MIT",
