@@ -64,7 +64,7 @@ const AsyncStorageDevTool: React.FC = () => {
         onPress={() => setVisible(true)}
         activeOpacity={0.7}
       >
-        <Text style={styles.fabText}>🗄️</Text>
+        <Text style={styles.fabText}>⚡️</Text>
       </TouchableOpacity>
       <Modal visible={visible} animationType="fade" transparent>
         <View style={styles.modalOverlay}>
@@ -157,18 +157,31 @@ const AsyncStorageDevTool: React.FC = () => {
 const styles = StyleSheet.create({
   fab: {
     position: 'absolute',
-    bottom: 40,
+    bottom: 100,
     right: 20,
-    backgroundColor: '#333',
+    backgroundColor: '#2563eb',
     borderRadius: 30,
     width: 56,
     height: 56,
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 1000,
-    elevation: 5,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 4.65,
+    elevation: 8,
   },
-  fabText: { color: '#fff', fontSize: 28 },
+  fabText: {
+    color: '#fff',
+    fontSize: 28,
+    textShadowColor: 'rgba(0, 0, 0, 0.2)',
+    textShadowOffset: { width: 0, height: 1 },
+    textShadowRadius: 2,
+  },
   modalOverlay: {
     flex: 1,
     backgroundColor: 'rgba(0,0,0,0.2)',
@@ -183,7 +196,12 @@ const styles = StyleSheet.create({
     elevation: 10,
     paddingBottom: 32,
   },
-  title: { fontWeight: 'bold', fontSize: 18, marginBottom: 12 },
+  title: {
+    fontWeight: 'bold',
+    fontSize: 18,
+    marginBottom: 12,
+    textAlign: 'center',
+  },
   stickyTitleContainer: {
     backgroundColor: '#fff',
     paddingBottom: 8,
