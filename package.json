@@ -1,8 +1,8 @@
 {
   "name": "react-native-async-storage-devtool",
-  "version": "1.0.7",
+  "version": "1.0.0",
   "description": "A devtool for React Native AsyncStorage",
-  "author": "Kenny Krosky",
+  "author": "Heyo",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -12,11 +12,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kennykrosky/react-native-async-storage-devtool"
+    "url": "https://github.com/TeamHeyo/react-native-async-storage-devtool"
   },
   "keywords": [
     "react-native",

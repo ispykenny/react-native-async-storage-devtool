@@ -57,6 +57,10 @@ const AsyncStorageDevTool: React.FC = () => {
     loadStorage();
   };
 
+  if (!__DEV__) {
+    return null;
+  }
+
   return (
     <>
       <TouchableOpacity
@@ -70,7 +74,7 @@ const AsyncStorageDevTool: React.FC = () => {
         <View style={styles.modalOverlay}>
           <View style={styles.panel}>
             <View style={styles.stickyTitleContainer}>
-              <Text style={styles.title}>AsyncStorage DevTool ⚡️</Text>
+              <Text style={styles.title}>AsyncStorage DevTools ⚡️</Text>
             </View>
             <ScrollView style={{ maxHeight: 400 }}>
               {storage.map(({ key, value }: { key: string; value: string }) => (
